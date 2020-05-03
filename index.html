@@ -22,18 +22,32 @@
     <title>Praja | Your local political trends</title>
 
     <!--favicon icon-->
-    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" type="image/png" href="img/favicon-128x128.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/ico" href="img/favicon.ico">
 
-    <!--google fonts-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157930973-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157930973-2');
+    </script>
+
+    <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans&display=swap"
           rel="stylesheet">
 
     <!--Bootstrap css-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--Magnific popup css-->
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/themify-icons.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--ytplayer css-->
@@ -42,9 +56,9 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!--custom css-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <!--responsive css-->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.min.css">
 
 </head>
 <body>
@@ -67,7 +81,7 @@
     <!--start navbar-->
     <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/">
                 <img src="img/logo-white.png" width="160" alt="logo" class="img-fluid"/>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -163,7 +177,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-9 col-lg-8">
                     <div class="section-heading text-center mb-2">
-                        <h2>The Made in India 🇮🇳 Social Network</h2>
+                        <h2>The Made in India <img alt="Make in India logo" src="img/make-in-india.png" height="35" align="middle" /> Social Network</h2>
                         <p class="lead">Tailor made for next-gen vernacular internet users of India. Find the country's best political network on Praja app. Stay connected with your favourite politicians & stay updated with the most trending news around you.</p>
                     </div>
                 </div>
@@ -969,6 +983,6 @@
 <!--countdown js-->
 <script src="js/jquery.countdown.min.js"></script>
 <!--custom js-->
-<script src="js/scripts.js"></script>
+<script src="js/scripts.min.js"></script>
 </body>
 </html>
