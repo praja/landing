@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- SEO Meta description -->
-    <meta name="description" content="Praja app helps you quickly find your local & political news" />
-    <meta name="author" content="ThemeTags" />
+    <meta name="description" content="Find the most trending content (news, jobs, politics) around you. The made in India social network for Indian users. Find the country's best political network on Praja app today!" />
+    <meta name="author" content="Dheeraj Avvari" />
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="fb:app_id" content="253149902758170" />
     <meta property="og:site_name" content="Praja" /> <!-- website name -->
     <meta property="og:site" content="https://praja.buzz" /> <!-- website link -->
     <meta property="og:title" content="Praja | Your local political trends" /> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Find the most trending content (news, jobs, politics) around you. The made in India social network for Indian users. Find the country's best political network on Praja app today!" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image:url" content="https://praja.buzz/img/hero-bg-3.jpg" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:image:secure_url" content="https://praja.buzz/img/hero-bg-3.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Indians parading with India flag" />
+    <meta property="og:url" content="https://praja.buzz" /> <!-- where do you want your post to link to -->
+    <meta property="og:type" content="website" />
 
     <!--title-->
     <title>Praja | Your local political trends</title>
@@ -36,6 +40,28 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-157930973-2');
+    </script>
+
+    <!-- FB Analytics -->
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '253149902758170',
+                cookie     : true,
+                xfbml      : true,
+                version    : 'v6.0'
+            });
+      
+            FB.AppEvents.logPageView();   
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
 
     <!-- Google fonts-->
@@ -116,7 +142,7 @@
                 <div class="col-md-7 col-lg-6">
                     <div class="hero-content-left text-white my-lg-0 my-md-5 my-sm-5 my-5">
                         <h1 class="text-white">The daily social media you need!</h1>
-                        <p class="lead">Find the most trending content (news, jobs, political opinions, etc.) around you.<br />Join your favourite politician's circle & stay updated about their activities.</p>
+                        <p class="lead">Find the most trending content (news, jobs, politics) around you.<br />Join your favourite politician's circle & stay updated about their activities.</p>
 
                        <div class="action-btns download-btn mt-4">
                             <a target="_blank" href='https://play.google.com/store/apps/details?id=buzz.praja.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
@@ -204,10 +230,11 @@
                         </div>
                         <div class="promo-content-wrap">
                             <h5>Fan Groups</h5>
-                            <p>A.k.a, Circles; Find all Andhra & Telangana politicians' & political party circles, and many other celebrity circles.</p>
+                            <p>a.k.a, Circles; Find all Andhra & Telangana politicians' & political party circles, and many other celebrity circles.</p>
 
-                            <span class="color-5 color-5-bg rounded py-1 px-2">#Politics</span>
-                            <span class="color-6 color-6-bg rounded py-1 px-2">#Circles</span>
+                            <span class="color-3 color-3-bg rounded py-1 px-2">#Politics</span>
+                            <span class="color-6 color-6-bg rounded py-1 px-2">#Celebrity</span>
+                            <span class="color-5 color-5-bg rounded py-1 px-2">#Circles</span>
                         </div>
                     </div>
                 </div>
@@ -964,7 +991,6 @@
     <span class="ti-angle-up"></span>
 </button>
 <!--bottom to top button end-->
-
 
 <!--jQuery-->
 <script src="js/jquery-3.4.1.min.js"></script>
