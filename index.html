@@ -13,7 +13,7 @@
     <meta property="fb:app_id" content="253149902758170" />
     <meta property="og:site_name" content="Praja" /> <!-- website name -->
     <meta property="og:site" content="https://praja.buzz" /> <!-- website link -->
-    <meta property="og:title" content="Praja | Your local political trends" /> <!-- title shown in the actual shared post -->
+    <meta property="og:title" content="Praja App &ndash; Your local political trends" /> <!-- title shown in the actual shared post -->
     <meta property="og:description" content="Find the most trending content (news, jobs, politics) around you. The made in India social network for Indian users. Find the country's best political network on Praja app today!" /> <!-- description shown in the actual shared post -->
     <meta property="og:image:url" content="https://praja.buzz/img/hero-bg-3.jpg" /> <!-- image link, make sure it's jpg -->
     <meta property="og:image:secure_url" content="https://praja.buzz/img/hero-bg-3.jpg" />
@@ -23,7 +23,7 @@
     <meta property="og:type" content="website" />
 
     <!--title-->
-    <title>Praja | Your local political trends</title>
+    <title>Praja App &ndash; Your local political trends</title>
 
     <!--favicon icon-->
     <link rel="icon" type="image/png" href="img/favicon-128x128.png">
@@ -108,7 +108,11 @@
     <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="img/logo-white.png" width="160" alt="logo" class="img-fluid"/>
+                <picture style="height: 160px">
+                    <source srcset="img/logo-white.webp" type="image/webp">
+                    <source srcset="img/logo-white.png" type="image/png">
+                    <img src="img/logo-white.png" width="160" alt="Praja App Logo" class="img-fluid"/>
+                </picture>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -123,7 +127,11 @@
                     <!-- <li><a href="#reviews" class="page-scroll">Reviews</a></li>
                     <li><a href="#faq" class="page-scroll">FAQ</a></li> -->
                     <!-- <li><a href="#contact" class="page-scroll">Contact Us</a></li> -->
-                    <li><a href="http://onelink.to/praja-buzz" class="page-scroll" target="_blank">Download Now</a></li>
+                    <li>
+                        <a href="http://onelink.to/praja-buzz" class="btn outline-white-btn page-scroll" target="_blank" style="height: 40px; padding: 10px;">
+                            Download Now
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -145,11 +153,19 @@
                         <p class="lead">Find the most trending content (news, jobs, politics) around you.<br />Join your favourite politician's circle & stay updated about their activities.</p>
 
                        <div class="action-btns download-btn mt-4">
-                            <a target="_blank" href='https://play.google.com/store/apps/details?id=buzz.praja.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                                <img height="50px" alt='Get it on Google Play' src='img/google-play-badge.png'/>
+                            <a class="btn" target="_blank" href='https://play.google.com/store/apps/details?id=buzz.praja.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                                <picture style="height: 50px">
+                                    <source srcset="img/google-play-badge.webp" type="image/webp">
+                                    <source srcset="img/google-play-badge.png" type="image/jpeg"> 
+                                    <img height="50px" src="img/google-play-badge.png" alt="Get it on Google Play">
+                                </picture>
                             </a>
-                            <a class="ml-4" target="_blank" href='https://apps.apple.com/us/app/praja/id1498121369'>
-                                <img height="52px" alt='Get it on App Store' src='img/app-store-badge.png'/>
+                            <a class="btn ml-4" target="_blank" href='https://apps.apple.com/us/app/praja/id1498121369'>
+                                <picture style="height: 52px">
+                                    <source srcset="img/app-store-badge.webp" type="image/webp">
+                                    <source srcset="img/app-store-badge.png" type="image/jpeg"> 
+                                    <img height="52px" src="img/app-store-badge.png" alt="Get it on App Store">
+                                </picture>
                             </a>
                            <!-- <a href="http://onelink.to/praja-buzz" class="page-scroll btn solid-white-btn animated-btn mr-lg-3">Download Now</a>
                            <a href="#contact" class="page-scroll btn outline-white-btn animated-btn">Contact Us</a> -->
@@ -160,7 +176,12 @@
                 <div class="col-md-5 col-lg-6">
                     <div class="video-app-wrap m-sm-auto ml-auto">
                         <div class="iphone-mask">
-                            <img src="img/iphone-mask.png" alt="app" class="img-fluid mask-img"/>
+                            <!-- <img src="img/iphone-mask.webp" alt="app" class="img-fluid mask-img"/> -->
+                            <picture class="img-fluid mask-img">
+                                <source srcset="img/iphone-mask.webp" type="image/webp">
+                                <source srcset="img/iphone-mask.png" type="image/png"> 
+                                <img src="img/iphone-mask.webp" alt="app" class="img-fluid mask-img">
+                            </picture>
                             <div class="video-wrap">
                                 <video autoplay loop muted playsinline width="400" height="300">
                                     <source src="img/app-overview.mp4" type="video/mp4" />
@@ -426,14 +447,46 @@
             <div class="screen-slider-content">
                 <div class="screenshot-frame"></div>
                 <div class="screen-carousel owl-carousel owl-theme dot-indicator">
-                    <img src="img/01.jpg" class="img-fluid" alt="screenshots"/>
-                    <img src="img/02.jpg" class="img-fluid" alt="screenshots"/>
-                    <img src="img/03.jpg" class="img-fluid" alt="screenshots"/>
-                    <img src="img/04.jpg" class="img-fluid" alt="screenshots"/>
-                    <img src="img/05.jpg" class="img-fluid" alt="screenshots"/>
-                    <img src="img/06.jpg" class="img-fluid" alt="screenshots"/>
-                    <img src="img/07.jpg" class="img-fluid" alt="screenshots"/>
-                    <img src="img/08.jpg" class="img-fluid" alt="screenshots"/>
+                    <picture class="img-fluid">
+                        <source srcset="img/01.webp" type="image/webp">
+                        <source srcset="img/01.jpg" type="image/jpeg"> 
+                        <img src="img/01.jpg" class="img-fluid" alt="App Screenshot 1"/>
+                    </picture>
+                    <picture class="img-fluid">
+                        <source srcset="img/02.webp" type="image/webp">
+                        <source srcset="img/02.jpg" type="image/jpeg"> 
+                        <img src="img/02.jpg" class="img-fluid" alt="App Screenshot 2"/>
+                    </picture>
+                    <picture class="img-fluid">
+                        <source srcset="img/03.webp" type="image/webp">
+                        <source srcset="img/03.jpg" type="image/jpeg"> 
+                        <img src="img/03.jpg" class="img-fluid" alt="App Screenshot 3"/>
+                    </picture>
+                    <picture class="img-fluid">
+                        <source srcset="img/04.webp" type="image/webp">
+                        <source srcset="img/04.jpg" type="image/jpeg"> 
+                        <img src="img/04.jpg" class="img-fluid" alt="App Screenshot 4"/>
+                    </picture>
+                    <picture class="img-fluid">
+                        <source srcset="img/05.webp" type="image/webp">
+                        <source srcset="img/05.jpg" type="image/jpeg"> 
+                        <img src="img/05.jpg" class="img-fluid" alt="App Screenshot 5"/>
+                    </picture>
+                    <picture class="img-fluid">
+                        <source srcset="img/06.webp" type="image/webp">
+                        <source srcset="img/06.jpg" type="image/jpeg"> 
+                        <img src="img/06.jpg" class="img-fluid" alt="App Screenshot 6"/>
+                    </picture>
+                    <picture class="img-fluid">
+                        <source srcset="img/07.webp" type="image/webp">
+                        <source srcset="img/07.jpg" type="image/jpeg"> 
+                        <img src="img/07.jpg" class="img-fluid" alt="App Screenshot 7"/>
+                    </picture>
+                    <picture class="img-fluid">
+                        <source srcset="img/08.webp" type="image/webp">
+                        <source srcset="img/08.jpg" type="image/jpeg"> 
+                        <img src="img/08.jpg" class="img-fluid" alt="App Screenshot 8"/>
+                    </picture>
                 </div>
             </div>
             <!--end app screen carousel-->
@@ -454,17 +507,29 @@
                         <p class="lead">Securely opinionate on your local events & issues. Stay updated!</p>
                         <div class="action-btns download-btn mt-4">
                             <a class="btn" target="_blank" href='https://play.google.com/store/apps/details?id=buzz.praja.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                                <img height="50px" alt='Get it on Google Play' src='img/google-play-badge.png'/>
+                                <picture style="height: 50px">
+                                    <source srcset="img/google-play-badge.webp" type="image/webp">
+                                    <source srcset="img/google-play-badge.png" type="image/jpeg"> 
+                                    <img height="50px" src="img/google-play-badge.png" alt="Get it on Google Play">
+                                </picture>
                             </a>
-                            <a class="btn" target="_blank" href='https://apps.apple.com/us/app/praja/id1498121369'>
-                                <img height="52px" alt='Get it on App Store' src='img/app-store-badge.png'/>
+                            <a class="btn ml-4" target="_blank" href='https://apps.apple.com/us/app/praja/id1498121369'>
+                                <picture style="height: 52px">
+                                    <source srcset="img/app-store-badge.webp" type="image/webp">
+                                    <source srcset="img/app-store-badge.png" type="image/jpeg"> 
+                                    <img height="52px" src="img/app-store-badge.png" alt="Get it on App Store">
+                                </picture>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-7">
                     <div class="d-flex align-items-end">
-                        <img class="img-fluid" src="img/hand-with-app.png" alt="download"/>
+                        <picture class="img-fluid" style="position: relative; top: 6px;">
+                            <source srcset="img/hand-with-app.webp" type="image/webp">
+                            <source srcset="img/hand-with-app.png" type="image/png">
+                            <img src="img/hand-with-app.png" alt="Praja App Download" class="img-fluid"/>
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -918,7 +983,13 @@
             <div class="row">
                 <div class="col-lg-4 col-12">
                     <div class="footer-nav-wrap text-white mb-0 mb-md-4 mb-lg-0">
-                        <a class="d-block" href="#"><img src="img/logo-white.png" alt="footer logo" width="150" class="img-fluid mb-1"></a>
+                        <a class="d-block" href="/">
+                            <picture style="height: 150px" class="img-fluid mb-1">
+                                <source srcset="img/logo-white.webp" type="image/webp">
+                                <source srcset="img/logo-white.png" type="image/png">
+                                <img src="img/logo-white.png" width="150" alt="Praja App Logo" class="img-fluid mb-1"/>
+                            </picture>
+                        </a>
                         <p>The daily social media providing you with the most trending content around you & your political circles.</p>
                         <ul class="list-unstyled social-list mb-0">
                             <li class="list-inline-item"><a href="https://www.facebook.com/praja.buzz/" class="rounded"><span class="ti-facebook white-bg color-2 shadow rounded-circle"></span></a></li>
